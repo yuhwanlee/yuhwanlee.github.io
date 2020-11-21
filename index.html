@@ -26,6 +26,7 @@
 <div class="p-3 container">
     <h1 class="pt-3 text-center">Yuhwan Lee</h1>
     <p class="text-center mb-2">I'm a high school senior with a strong interest in computer science.</p>
+    <p class="small text-center mb-2">yuhwanlee1@gmail.com • 443-686-0792 • <a href="files/resume.pdf" target="_blank">Resume</a></p>
     <div class="text-center">
         <a href="https://github.com/yuhwanlee1" target="_blank"><img src="images/github_icon.png"/></a>
         <a href="https://www.linkedin.com/in/yuhwan-lee-5b38b0168/" target="_blank"><img
@@ -34,11 +35,29 @@
     <hr>
 
     <h2 class="text-left">Education</h2>
-    <h6 class="text-left">Centennial High School <em class="text-black-50">(2017 - Present)</em></h6>
+    <h6 class="text-left dated-title">Centennial High School</h6>
+    <p class="small font-italic text-black-50 date">September 2017 - Present</p>
     <p class="text-left small">Weighted GPA: 4.79</p>
-    <hr>
 
+    <!----------------- WORK EXPERIENCE -------------->
+
+    <!--
+    <hr>
+    <h2 class="text-left">Work Experience</h2>
+    <div class="container" id="work-experience-table">
+        <div class="row">
+            <div class="col work-experience">
+                <h6 class="text-left dated-title">Kumon - Tutor</h6>
+                <p class="small font-italic text-black-50 date">August 2020 - Present</p>
+                <p class="text-left small summary">Tutoring students in various levels of math.</p>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+    </div> -->
     <!------------------ PROJECTS -------------------->
+    <hr>
     <h2 class="text-left">Projects</h2>
 
     <div class="container" id="projects-table">
@@ -62,7 +81,9 @@
                     <div class="card card-body">
                         <p class="small font-italic text-black-50">Skills used: Amazon S3, Webhooks, Python</p>
                         <p class="small">This project is a Discord bot that uses Discord.py, a Python wrapper for the
-                            discord API. Requests for tutoring are typically created with a Google Form, which triggers
+                            discord API. A bot that could manage tutoring requests was needed because of my school's
+                            Math Honor Society's transition into an online environment (Discord) due to Covid-19.
+                            Requests for tutoring are typically created with a Google Form, which triggers
                             a webhook on submission.
                             To access the data regarding existing requests, the bot connects to an Amazon S3 Bucket,
                             downloads the stored CSV, and uploads the edited CSV back to the bucket.</p>
@@ -221,9 +242,9 @@
                    href="https://github.com/Centennial-FTC-Robotics/Exponential2020-2021"><img
                         src="images/small_github_icon.png" alt="GitHub"></a>
 
-                <h6 class="text-left">FTC Robotics - Lead Programmer <em class="text-black-50">(2018 -
-                    Present)</em>
-                </h6>
+                <h6 class="text-left dated-title">FTC Robotics - Lead Programmer</h6>
+                <p class="small font-italic text-black-50 date">September 2018 - Present</p>
+
                 <p class="text-left small summary">Programming a robot with a robotics team in order to compete in the
                     First Tech Challenge.</p>
 
@@ -243,9 +264,9 @@
                     <img class="dropdown-icon" src="images/dropdown_icon.png" alt="Dropdown">
                 </a>
 
-                <h6 class="text-left">Pyoneers - Education Committee <em class="text-black-50">(2020 -
-                    Present)</em>
-                </h6>
+                <h6 class="text-left dated-title">Pyoneers - Education Committee</h6>
+                <p class="small font-italic text-black-50 date">September 2020 - Present</p>
+
                 <p class="text-left small summary">Developing curriculum and programming problems for students learning
                     Python.</p>
 
@@ -259,6 +280,33 @@
                             the lesson for that week.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col activity">
+                <a class="dropdown btn float-right" type="button" data-toggle="collapse"
+                   href="#nmhsDescription" aria-expanded="false" aria-controls="nmhsDescription">
+                    <img class="dropdown-icon" src="images/dropdown_icon.png" alt="Dropdown">
+                </a>
+
+                <h6 class="text-left dated-title">National Math Honor Society</h6>
+                <p class="small font-italic text-black-50 date">September 2020 - Present</p>
+
+                <p class="text-left small summary">Tutoring peers in various math topics.</p>
+
+                <div class="collapse" id="nmhsDescription">
+                    <div class="card card-body">
+                        <p class="small font-italic text-black-50">Skills used: LaTeX</p>
+                        <p class="small">As a member of Centennial High School's National Math Honor Society, my
+                            duties include tutoring students in various math topics and transcribing handwritten
+                            questions into LaTeX documents. Because of this club's transition to a virtual setting
+                            due to Covid-19, I created a Discord bot to help manage the online tutoring requests that
+                            we receive (Tutoring Request Manager).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col activity">
+                <!-- placeholder for now -->
             </div>
         </div>
     </div>

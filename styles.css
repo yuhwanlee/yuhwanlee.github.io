@@ -42,7 +42,16 @@ p {
 .btn {
     padding: 0;
 }
+.dated-title {
+    margin-bottom: 0;
+}
 
+.date {
+    margin-bottom: .25rem;
+}
+#work-experience-table {
+    padding: 0;
+}
 #projects-table {
     padding: 0;
 }
