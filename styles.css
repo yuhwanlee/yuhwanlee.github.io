@@ -1,0 +1,50 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+}
+
+body {
+}
+
+/* use this selector to see the outline of the main container
+div {
+    background-clip: content-box;
+    background-color: gray;
+}
+*/
+p {
+    margin: 0;
+}
+.project {
+    margin-bottom: 1rem;
+}
+
+.activity {
+    margin-bottom: 1rem;
+}
+
+.summary {
+    margin-bottom: .25rem;
+}
+
+.card {
+    padding: 0;
+    margin-top:0;
+    /*border: none;*/
+}
+
+.dropdown-icon {
+    width: 1rem;
+}
+
+#projects-table {
+    padding: 0;
+}
+
+#activities-table {
+    padding: 0;
+}
+
+h1 {
+    /*text-align: center;*/
+}
