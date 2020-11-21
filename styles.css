@@ -24,17 +24,23 @@ p {
 }
 
 .summary {
-    margin-bottom: .25rem;
+    margin-bottom: .4rem;
 }
 
 .card {
     padding: 0;
     margin-top:0;
-    /*border: none;*/
+    border: none;
 }
 
 .dropdown-icon {
     width: 1rem;
+}
+.dropdown {
+    margin-left: .5rem;
+}
+.btn {
+    padding: 0;
 }
 
 #projects-table {

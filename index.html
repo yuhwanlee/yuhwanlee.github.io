@@ -27,53 +27,70 @@
     <h1 class="pt-3 text-center">Yuhwan Lee</h1>
     <p class="text-center mb-2">I'm a high school senior with a strong interest in computer science.</p>
     <div class="text-center">
-        <a href="https://github.com/yuhwanlee1"><img src="images/github_icon.png"/></a>
-        <a href="https://www.linkedin.com/in/yuhwan-lee-5b38b0168/"><img src="images/linkedin_icon.png"/></a>
+        <a href="https://github.com/yuhwanlee1" target="_blank"><img src="images/github_icon.png"/></a>
+        <a href="https://www.linkedin.com/in/yuhwan-lee-5b38b0168/" target="_blank"><img
+                src="images/linkedin_icon.png"/></a>
     </div>
     <hr>
 
-    <h2 class="pl-3 text-left">Education</h2>
-    <h6 class="pl-3 text-left">Centennial High School <em class="text-black-50">(2017 - Present)</em></h6>
-    <p class="pl-3 text-left small">Weighted GPA: 4.79</p>
+    <h2 class="text-left">Education</h2>
+    <h6 class="text-left">Centennial High School <em class="text-black-50">(2017 - Present)</em></h6>
+    <p class="text-left small">Weighted GPA: 4.79</p>
     <hr>
 
     <!------------------ PROJECTS -------------------->
-    <h2 class="pl-3 text-left">Projects</h2>
+    <h2 class="text-left">Projects</h2>
 
     <div class="container" id="projects-table">
         <div class="row">
             <!----------------- REQUEST MANAGER ------------------>
             <div class="col project">
-                <a class="pl-3 btn float-right" type="button" data-toggle="collapse" href="#requestManagerDescription"
+                <a class="dropdown btn float-right" type="button" data-toggle="collapse"
+                   href="#requestManagerDescription"
                    aria-expanded="false" aria-controls="requestManagerDescription">
-                    <img class="dropdown-icon" src="images/dropdown_icon.png">
+                    <img class="dropdown-icon" src="images/dropdown_icon.png" alt="Dropdown">
                 </a>
+                <a class="float-right" target="_blank" href="https://github.com/yuhwanlee1/NMHS-Request-Bot"><img
+                        src="images/small_github_icon.png" alt="GitHub"></a>
 
-                <h6 class="pl-3 text-left">Tutoring Request Manager</h6>
-                <p class="pl-3 text-left small summary">A Discord bot that manages tutoring requests for Centennial High
+                <h6 class="text-left">Tutoring Request Manager</h6>
+                <p class="text-left small summary">A Discord bot that manages tutoring requests for Centennial High
                     School's Math Honor Society.</p>
                 <!--<a class="pl-3 btn" href="https://github.com/yuhwanlee1/NMHS-Request-Bot">Repository</a>-->
 
-                <div class="collapse pl-3" id="requestManagerDescription">
+                <div class="collapse" id="requestManagerDescription">
                     <div class="card card-body">
-                        <p class="small">Request Manager Description</p>
+                        <p class="small font-italic text-black-50">Skills used: Amazon S3, Webhooks, Python</p>
+                        <p class="small">This project is a Discord bot that uses Discord.py, a Python wrapper for the
+                            discord API. Requests for tutoring are typically created with a Google Form, which triggers
+                            a webhook on submission.
+                            To access the data regarding existing requests, the bot connects to an Amazon S3 Bucket,
+                            downloads the stored CSV, and uploads the edited CSV back to the bucket.</p>
                     </div>
                 </div>
             </div>
             <!----------------- FACEBOOK ------------------->
             <div class="col project">
-                <a class="pl-3 btn float-right" type="button" data-toggle="collapse" href="#facebookBotDescription"
+                <a class="dropdown btn float-right" type="button" data-toggle="collapse" href="#facebookBotDescription"
                    aria-expanded="false" aria-controls="facebookBotDescription">
-                    <img class="dropdown-icon" src="images/dropdown_icon.png">
+                    <img class="dropdown-icon" src="images/dropdown_icon.png" alt="Dropdown">
                 </a>
-                <h6 class="pl-3 text-left">Facebook Posting Bot</h6>
-                <p class="pl-3 text-left small summary">A bot that takes content from Reddit and posts it on various
+                <h6 class="text-left">Facebook Posting Bot</h6>
+                <p class="text-left small summary">A bot that takes content from Reddit and posts it on various
                     Facebook
-                    pages.</p>
+                    pages, hosted on an Amazon EC2 Instance.</p>
 
-                <div class="collapse pl-3" id="facebookBotDescription">
+                <div class="collapse" id="facebookBotDescription">
                     <div class="card card-body">
-                        <p class="small">Facebook Bot Description</p>
+                        <p class="small font-italic text-black-50">Skills used: Amazon EC2, Facebook Graph API, Reddit
+                            API, Python</p>
+                        <p class="small">This program is designed to take the hottest posts from multiple subreddits
+                            from Reddit, and post them
+                            on to various Facebook pages. First, the program uses the Reddit API to get the popular
+                            posts, and then
+                            does the necessary processing on the downloaded content. Then, it uses Facebook's Graph API
+                            to post the content
+                            to a Facebook Page. This program is hosted on an Amazon EC2 Linux instance.</p>
                     </div>
                 </div>
             </div>
@@ -81,38 +98,53 @@
         <div class="row">
             <!----------------- MEDNET ------------------>
             <div class="col project">
-                <a class="pl-3 btn float-right" type="button" data-toggle="collapse" href="#mednetDescription"
+                <a class="dropdown btn float-right" type="button" data-toggle="collapse" href="#mednetDescription"
                    aria-expanded="false" aria-controls="mednetDescription">
-                    <img class="dropdown-icon" src="images/dropdown_icon.png">
+                    <img class="dropdown-icon" src="images/dropdown_icon.png" alt="Dropdown">
                 </a>
+                <a class="float-right" target="_blank" href="https://github.com/yuhwanlee1/MedNet"><img
+                        src="images/small_github_icon.png" alt="GitHub"></a>
 
-                <h6 class="pl-3 text-left">MedNet</h6>
-                <p class="pl-3 text-left small summary">A web application which connects hospitals with medical
+                <h6 class="text-left">MedNet</h6>
+                <p class="text-left small summary">A web application which connects hospitals with medical
                     suppliers.</p>
                 <!--<a class="pl-3 btn" href="https://github.com/yuhwanlee1/MedNet">Repository</a>-->
 
-                <div class="collapse pl-3" id="mednetDescription">
+                <div class="collapse" id="mednetDescription">
                     <div class="card card-body">
-                        <p class="small">Mednet Description</p>
+                        <p class="small font-italic text-black-50">Skills used: Google Cloud, Firestore, Twilio API,
+                            Flask, Python</p>
+                        <p class="small">MedNet was my team's submission for the Def Hacks 2020 Hackathon. To solve the
+                            problem of hospitals being short of medical supplies due to the Covid-19 Pandemic, we
+                            created a web application that allows hospitals to communicate with medical supply
+                            providers, and to make requests for supplies.</p>
+                        <p class="small"><a href="https://devpost.com/software/mednet-12ryge" target="_blank">Devpost
+                            Submission</a></p>
                     </div>
                 </div>
             </div>
             <!----------------- POLIBIAS ------------------>
             <div class="col project">
-                <a class="pl-3 btn float-right" type="button" data-toggle="collapse" href="#polibiasDescription"
+                <a class="dropdown btn float-right" type="button" data-toggle="collapse" href="#polibiasDescription"
                    aria-expanded="false" aria-controls="polibiasDescription">
-                    <img class="dropdown-icon" src="images/dropdown_icon.png">
+                    <img class="dropdown-icon" src="images/dropdown_icon.png" alt="Dropdown">
                 </a>
+                <a class="float-right" target="_blank" href="https://github.com/yuhwanlee1/PoliBias"><img
+                        src="images/small_github_icon.png" alt="GitHub"></a>
 
-                <h6 class="pl-3 text-left">PoliBias</h6>
-                <p class="pl-3 text-left small summary">A flask application that allows for the detection of political
-                    bias in
-                    text.</p>
+                <h6 class="text-left">PoliBias</h6>
+                <p class="text-left small summary">A flask application that allows for the detection of political
+                    bias in text.</p>
                 <!--<a class="pl-3 btn" href="#">Repository</a>-->
 
-                <div class="collapse pl-3" id="polibiasDescription">
+                <div class="collapse" id="polibiasDescription">
                     <div class="card card-body">
-                        <p class="small">PoliBias Description</p>
+                        <p class="small font-italic text-black-50">Skills used: Keras, TensorFlow, Flask, Python</p>
+                        <p class="small">PoliBias was my team's submission to the NotUniversity Hacks hackathon.
+                            To determine the political bias of some text, we used a recurrent neural network trained
+                            on a large dataset of political texts.</p>
+                        <p class="small"><a href="https://devpost.com/software/polibias-iqrwh9" target="_blank">Devpost
+                            Submission</a></p>
                     </div>
                 </div>
 
@@ -122,38 +154,49 @@
         <div class="row">
             <!----------------- SYNC TOOL ------------------>
             <div class="col project">
-                <a class="pl-3 btn float-right" type="button" data-toggle="collapse" href="#synctoolDescription"
+                <a class="dropdown btn float-right" type="button" data-toggle="collapse" href="#synctoolDescription"
                    aria-expanded="false" aria-controls="synctoolDescription">
-                    <img class="dropdown-icon" src="images/dropdown_icon.png">
+                    <img class="dropdown-icon" src="images/dropdown_icon.png" alt="Dropdown">
                 </a>
+                <a class="float-right" target="_blank" href="https://github.com/yuhwanlee1/GroupProjectAOOD"><img
+                        src="images/small_github_icon.png" alt="GitHub"></a>
 
-                <h6 class="pl-3 text-left">Sync-Tool</h6>
-                <p class="pl-3 text-left small summary">A desktop application that provides an offline version control
+                <h6 class="text-left">Sync-Tool</h6>
+                <p class="text-left small summary">A desktop application that provides an offline version control
                     system.</p>
                 <!--<a class="pl-3 btn" href="https://github.com/yuhwanlee1/GroupProjectAOOD">Repository</a>-->
-                <div class="collapse pl-3" id="synctoolDescription">
+                <div class="collapse" id="synctoolDescription">
                     <div class="card card-body">
-                        <p class="small">Sync Tool Description</p>
+                        <p class="small font-italic text-black-50">Skills used: Java</p>
+                        <p class="small">Sync-Tool is a Desktop application that was created with a team of my
+                            classmates in an Object Oriented Design class. The application serves as an offline
+                            version control system, allowing users to save the current state of any directory,
+                            and restoring the data from any save to the original directory.</p>
                     </div>
                 </div>
             </div>
             <!----------------- SORTING VISUALIZER ------------------>
             <div class="col project">
-                <a class="pl-3 btn float-right" type="button" data-toggle="collapse"
+                <a class="dropdown btn float-right" type="button" data-toggle="collapse"
                    href="#sortingVisualizerDescription"
                    aria-expanded="false" aria-controls="sortingVisualizerDescription">
-                    <img class="dropdown-icon" src="images/dropdown_icon.png">
+                    <img class="dropdown-icon" src="images/dropdown_icon.png" alt="Dropdown">
                 </a>
+                <a class="float-right" target="_blank" href="https://github.com/yuhwanlee1/SortingVisualizer"><img
+                        src="images/small_github_icon.png" alt="GitHub"></a>
 
-                <h6 class="pl-3 text-left">Sorting Visualizer</h6>
-                <p class="pl-3 text-left small summary">A program that demonstrates the efficiency of sorting algorithms
-                    with
-                    random
-                    generation.</p>
+                <h6 class="text-left">Sorting Visualizer</h6>
+                <p class="text-left small summary">A program that demonstrates the efficiency of sorting algorithms
+                    with random generation.</p>
                 <!--<a class="pl-3 btn" href="https://github.com/yuhwanlee1/SortingVisualizer">Repository</a>-->
-                <div class="collapse pl-3" id="sortingVisualizerDescription">
+                <div class="collapse" id="sortingVisualizerDescription">
                     <div class="card card-body">
-                        <p class="small">Sorting Visualizer Description</p>
+                        <p class="small font-italic text-black-50">Skills used: Java</p>
+                        <p class="small">Sorting Visualizer is a program that demonstrates how different sorting
+                            algorithms work with colorful animated lines that travel across the screen. The user
+                            can choose between a multitude of sorts, how many lines are shown on the screen,
+                            and whether or not the average case or worst case of the sorting algorithm should be
+                            shown.</p>
                     </div>
                 </div>
             </div>
@@ -163,23 +206,59 @@
         <hr>
     </div>
 
-    <h2 class="pl-3 text-left">Extra-Curricular Activities</h2>
+    <h2 class="text-left">Extra-Curricular Activities</h2>
 
     <div class="container" id="activities-table">
         <div class="row">
             <div class="col activity">
-                <h6 class="pl-3 text-left">FTC Robotics - Lead Programmer <em class="text-black-50">(2018 - Present)</em>
+                <a class="dropdown btn float-right" type="button" data-toggle="collapse"
+                   href="#ftcDescription"
+                   aria-expanded="false" aria-controls="ftcDescription">
+                    <img class="dropdown-icon" src="images/dropdown_icon.png" alt="Dropdown">
+                </a>
+
+                <a class="float-right" target="_blank"
+                   href="https://github.com/Centennial-FTC-Robotics/Exponential2020-2021"><img
+                        src="images/small_github_icon.png" alt="GitHub"></a>
+
+                <h6 class="text-left">FTC Robotics - Lead Programmer <em class="text-black-50">(2018 -
+                    Present)</em>
                 </h6>
-                <p class="pl-3 text-left small">Programming a robot with a robotics team in order to compete in the
-                    First
-                    Tech
-                    Challenge.</p>
+                <p class="text-left small summary">Programming a robot with a robotics team in order to compete in the
+                    First Tech Challenge.</p>
+
+                <div class="collapse" id="ftcDescription">
+                    <div class="card card-body">
+                        <p class="small font-italic text-black-50">Skills used: Java</p>
+                        <p class="small">Programming for an FTC team requires communication and coordination. Because
+                            of the fickle nature of robotics, lots of organization is required to make sure that
+                            everything that we code works as we should, necessitating us to take a dive into unit
+                            testing and proper object oriented design.</p>
+                    </div>
+                </div>
             </div>
             <div class="col activity">
-                <h6 class="pl-3 text-left">Pyoneers - Education Committee <em class="text-black-50">(2020 - Present)</em>
+                <a class="dropdown btn float-right" type="button" data-toggle="collapse"
+                   href="#pyoneersDescription" aria-expanded="false" aria-controls="pyoneersDescription">
+                    <img class="dropdown-icon" src="images/dropdown_icon.png" alt="Dropdown">
+                </a>
+
+                <h6 class="text-left">Pyoneers - Education Committee <em class="text-black-50">(2020 -
+                    Present)</em>
                 </h6>
-                <p class="pl-3 text-left small">Developing curriculum and programming problems for students learning
+                <p class="text-left small summary">Developing curriculum and programming problems for students learning
                     Python.</p>
+
+                <div class="collapse" id="pyoneersDescription">
+                    <div class="card card-body">
+                        <p class="small font-italic text-black-50">Skills used: Python</p>
+                        <p class="small">Pyoneers is a club at Centennial High School that aims to teach Python to
+                            students, providing presentations, programming questions, and classes regarding specific
+                            Python libraries or concepts. As a member of the Education Committee, my job is to develop
+                            curriculum for the students that we teach, as well as create weekly questions that relate to
+                            the lesson for that week.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
