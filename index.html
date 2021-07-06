@@ -26,7 +26,7 @@
 <body>
 <div class="p-3 container">
     <h1 class="pt-3 text-center">Yuhwan Lee</h1>
-    <p class="text-center mb-2">A high school senior with a strong interest in computer science.</p>
+    <p class="text-center mb-2">A college freshman interested in computer science.</p>
     <p class="small text-center mb-2">yuhwanlee1@gmail.com • <a href="files/yuhwan_lee_resume.pdf"
                                                                                target="_blank">Resume</a></p>
     <div class="text-center">
@@ -37,9 +37,32 @@
     <hr>
 
     <h2 class="text-left">Education</h2>
-    <h6 class="text-left dated-title">Centennial High School</h6>
-    <p class="small font-italic text-black-50 date">September 2017 - Present</p>
-    <p class="text-left small">Weighted GPA: 4.79</p>
+    <div class="container" id="education-table">
+        <div class="row">
+            <div class="col-lg-6">
+                <h6 class="text-left dated-title">University of Maryland: College Park</h6>
+                <p class="small font-italic text-black-50 date">August 2021 - May 2025 (Expected)</p>
+                <p class="text-left small">GPA: N/A</p>
+            </div>
+            <div class="col-lg-6">
+                <a class="dropdown btn float-right" type="button" data-toggle="collapse"
+                   href="#chsDescription"
+                   aria-expanded="false" aria-controls="chsDescription">
+                    <img class="dropdown-icon" src="images/dropdown_icon.png" alt="Dropdown">
+                </a>
+
+                <h6 class="text-left dated-title">Centennial High School</h6>
+                <p class="small font-italic text-black-50 date">September 2017 - May 2021</p>
+                <p class="text-left small">Weighted GPA: 4.83</p>
+
+                <div class="collapse" id="chsDescription">
+                    <div class="card card-body">
+                        <p class="small font-italic text-black-50">Relevant Coursework: AP Computer Science A, Objected Oriented Design, Advanced Data Structures, Calculus I & II, Discrete Mathematics, AP Statistics</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!----------------- WORK EXPERIENCE -------------->
 
@@ -82,41 +105,39 @@
                 <div class="collapse" id="requestManagerDescription">
                     <div class="card card-body">
                         <p class="small font-italic text-black-50">Skills used: Amazon S3, Webhooks, Python</p>
-                        <p class="small">This project is a Discord bot that uses Discord.py, a Python wrapper for the
-                            discord API. A bot that could manage tutoring requests was needed because of my school's
-                            Math Honor Society's transition into an online environment (Discord) due to Covid-19.
-                            Requests for tutoring are typically created with a Google Form, which triggers
-                            a webhook on submission.
-                            To access the data regarding existing requests, the bot connects to an Amazon S3 Bucket,
-                            downloads the stored CSV, and uploads the edited CSV back to the bucket.</p>
+                        <p class="small">My school's National Math Honor Society needed a way to manage tutoring
+                            requests because of our transition into an online environment due to Covid-19. I decided
+                            to help by creating a Discord bot for them, which would allow members to receive and respond to
+                            requests. Requests for tutoring are typically created with a Google Form, which triggers
+                            a webhook on submission. To access the data regarding existing requests,
+                            the bot accesses data inside of an Amazon S3 Bucket.</p>
                     </div>
                 </div>
             </div>
-            <!----------------- FACEBOOK ------------------->
+            <!----------------- SOCIAL MEDIA ------------------->
             <div class="col-lg-6 project">
                 <a class="dropdown btn float-right" type="button" data-toggle="collapse" href="#facebookBotDescription"
                    aria-expanded="false" aria-controls="facebookBotDescription">
                     <img class="dropdown-icon" src="images/dropdown_icon.png" alt="Dropdown">
                 </a>
-                <h6 class="text-left">Facebook Posting Bot</h6>
-                <p class="text-left small summary">A bot that takes content from Reddit and posts it on various
-                    Facebook
-                    pages, hosted on an Amazon EC2 Instance.</p>
+                <h6 class="text-left">Social Media Posting Bot</h6>
+                <p class="text-left small summary">A program that takes content from Reddit and posts it on various social
+                media sites, hosted on an Amazon EC2 Instance.</p>
 
                 <div class="collapse" id="facebookBotDescription">
                     <div class="card card-body">
                         <p class="small font-italic text-black-50">Skills used: Amazon EC2, Facebook Graph API, Reddit
-                            API, Python</p>
-                        <p class="small">This program is designed to take the hottest posts from multiple subreddits
+                            API, Twitter API, Python</p>
+                        <p class="small">This program is designed to take the most popular posts from multiple subreddits
                             from Reddit, and post them
-                            on to various Facebook pages. First, the program uses the Reddit API to get the popular
-                            posts, and then
-                            does the necessary processing on the downloaded content. Then, it uses Facebook's Graph API
-                            to post the content
-                            to a Facebook Page. This program is hosted on an Amazon EC2 Linux instance.</p>
-                        <p class="small">
-                            <a href="https://www.facebook.com/hourlycats/" target="_blank">One of the Facebook pages</a>
+                            on to various social media pages. First, the program downloads content from the Reddit API.
+                            Then, it uses Facebook's Graph API and Twitter's API
+                            to post the content. This program is hosted on an Amazon EC2 Linux instance, which runs
+                            the script in regular intervals
                         </p>
+                        <!--<p class="small">
+                            <a href="https://www.facebook.com/hourlycats/" target="_blank">One of the Facebook pages</a>
+                        </p>-->
                     </div>
                 </div>
             </div>
@@ -251,7 +272,7 @@
                    href="https://chsftcrobotics.weebly.com/"><img src="images/link_icon.png" alt="Website"></a>
 
                 <h6 class="text-left dated-title">FTC Robotics - Lead Programmer</h6>
-                <p class="small font-italic text-black-50 date">September 2018 - Present</p>
+                <p class="small font-italic text-black-50 date">September 2018 - May 2021</p>
 
                 <p class="text-left small summary">Programming a robot with a robotics team in order to compete in the
                     First Tech Challenge.</p>
@@ -259,10 +280,13 @@
                 <div class="collapse" id="ftcDescription">
                     <div class="card card-body">
                         <p class="small font-italic text-black-50">Skills used: Java</p>
-                        <p class="small">Programming for an FTC team requires communication and coordination. Because
-                            of the fickle nature of robotics, lots of organization is required to make sure that
-                            everything that we code works as we should, necessitating us to take a dive into unit
-                            testing and proper object oriented design.</p>
+                        <p class="small">
+                            As the lead programmer on my robotics team, I made sure to take initiative and decide on the
+                            structure of my team's codebase. From previous years, I learned the importance of modularity
+                            and object oriented design, so I made sure to implement the knowledge I had to create a class
+                            hierarchy that was intuitive, and one that would allow for new features to be easily added on
+                            in the future.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -273,7 +297,7 @@
                 </a>
 
                 <h6 class="text-left dated-title">Pyoneers - Education Committee</h6>
-                <p class="small font-italic text-black-50 date">September 2020 - Present</p>
+                <p class="small font-italic text-black-50 date">September 2020 - May 2021</p>
 
                 <p class="text-left small summary">Developing curriculum and programming problems for students learning
                     Python.</p>
@@ -283,9 +307,9 @@
                         <p class="small font-italic text-black-50">Skills used: Python</p>
                         <p class="small">Pyoneers is a club at Centennial High School that aims to teach Python to
                             students, providing presentations, programming questions, and classes regarding specific
-                            Python libraries or concepts. As a member of the Education Committee, my job is to develop
-                            curriculum for the students that we teach, as well as create weekly questions that relate to
-                            the lesson for that week.</p>
+                            Python libraries or concepts. As a member of the Education Committee, my tasks were to help develop
+                            curriculum for the students that we teach, as well as to create weekly programming questions.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -304,16 +328,17 @@
                    href="https://webpoint.dev/"><img src="images/link_icon.png" alt="Website"></a>
 
                 <h6 class="text-left dated-title">WebPoint - Programmer</h6>
-                <p class="small font-italic text-black-50 date">July 2020 - Present</p>
+                <p class="small font-italic text-black-50 date">July 2020 - May 2021</p>
 
                 <p class="text-left small summary">A volunteer organization delivering professional websites to
                     local businesses.</p>
 
                 <div class="collapse" id="webpointDescription">
                     <div class="card card-body">
-                        <p class="small font-italic text-black-50">Skills used: Bulma, Bootstrap, HTML, CSS</p>
-                        <p class="small">As a programmer for WebPoint, I help with the front end of websites,
-                            delivering pages according to specifications using the web framework Bulma.</p>
+                        <p class="small font-italic text-black-50">Skills used: Bootstrap, HTML, CSS</p>
+                        <p class="small">As a programmer for WebPoint, I helped with developing the front end of the
+                            websites we produced,
+                            delivering pages according to the given specifications using the web framework Bootstrap.</p>
                     </div>
                 </div>
             </div>
@@ -325,7 +350,7 @@
                 </a>
 
                 <h6 class="text-left dated-title">National Math Honor Society</h6>
-                <p class="small font-italic text-black-50 date">September 2020 - Present</p>
+                <p class="small font-italic text-black-50 date">September 2020 - May 2021</p>
 
                 <p class="text-left small summary">Tutoring peers in various math topics.</p>
 
@@ -333,7 +358,7 @@
                     <div class="card card-body">
                         <p class="small font-italic text-black-50">Skills used: LaTeX</p>
                         <p class="small">As a member of Centennial High School's National Math Honor Society, my
-                            duties include tutoring students in various math topics and transcribing handwritten
+                            duties included tutoring students in various math topics and transcribing handwritten
                             questions into LaTeX documents. Because of this club's transition to a virtual setting
                             due to Covid-19, I created a Discord bot to help manage the online tutoring requests that
                             we receive (Tutoring Request Manager).</p>

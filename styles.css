@@ -49,6 +49,10 @@ p {
 .date {
     margin-bottom: .25rem;
 }
+
+#education-table {
+    padding: 0;
+}
 #work-experience-table {
     padding: 0;
 }
@@ -58,8 +62,4 @@ p {
 
 #activities-table {
     padding: 0;
-}
-
-h1 {
-    /*text-align: center;*/
 }
